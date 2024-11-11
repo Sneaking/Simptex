@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snsupear Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="saveText()">Save</button>
+            <button onclick="loadText()">Load</button>
+            <button onclick="clearText()">Clear</button>
+            <button onclick="askGPT()" class="gpt-button">Ask ChatGPT</button>
+        </div>
+        <textarea id="editor" spellcheck="true" placeholder="Start typing..."></textarea>
+        <div id="gpt-response" class="gpt-response"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
